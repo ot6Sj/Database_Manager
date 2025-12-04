@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern database management interface - mini phpMyAdmin">
+    <title>Database Manager</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- App Container -->
+    <div id="app">
+        <!-- Navigation (hidden on login page) -->
+        <nav id="navbar" class="navbar hidden">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <span class="brand-icon"><img src="/icons/database.svg" class="icon" alt="Database"></span>
+                    <span class="brand-text">DB Manager</span>
+                    <span class="database-name" id="navDbName"></span>
+                </div>
+                <div class="navbar-menu">
+                    <a href="#dashboard" class="nav-link active" data-page="dashboard">
+                        <img src="/icons/dashboard.svg" class="icon" alt="Dashboard"> Dashboard
+                    </a>
+                    <a href="#tables" class="nav-link" data-page="tables">
+                        <img src="/icons/table.svg" class="icon" alt="Tables"> Tables
+                    </a>
+                    <a href="#sql" class="nav-link" data-page="sql">
+                        <img src="/icons/lightning.svg" class="icon" alt="SQL"> SQL Playground
+                    </a>
+                    <button id="disconnectBtn" class="btn-disconnect">
+                        <img src="/icons/door.svg" class="icon" alt="Disconnect"> Disconnect
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-content">
+            <!-- Dynamic content will be loaded here -->
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
