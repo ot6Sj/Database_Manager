@@ -1,5 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="7.5" cy="15.5" r="5.5"/>
-  <path d="m21 2-9.6 9.6"/>
-  <path d="m15.5 7.5 3 3L22 7l-3-3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="keyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <!-- Key head -->
+  <circle cx="7" cy="7" r="5" fill="url(#keyGrad)" opacity="0.3" stroke="url(#keyGrad)" stroke-width="2"/>
+  <circle cx="7" cy="7" r="2" fill="none" stroke="url(#keyGrad)" stroke-width="2"/>
+  <!-- Key shaft -->
+  <path d="M11 11l9 9" stroke="url(#keyGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Key teeth -->
+  <path d="M16 16l2-2M18 18l2-2" stroke="url(#keyGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- PK label -->
+  <text x="16" y="8" fill="url(#keyGrad)" font-size="5" font-weight="bold">PK</text>
 </svg>

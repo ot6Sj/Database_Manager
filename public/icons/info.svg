@@ -1,5 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <circle cx="12" cy="12" r="10"/>
-  <path d="M12 16v-4"/>
-  <path d="M12 8h.01"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="infoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <filter id="infoGlow">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Filled circle background -->
+  <circle cx="12" cy="12" r="10" fill="url(#infoGrad)" filter="url(#infoGlow)"/>
+  <!-- White "i" symbol -->
+  <circle cx="12" cy="7.5" r="1.8" fill="#fff"/>
+  <rect x="10" y="10.5" width="4" height="7" rx="1.5" fill="#fff"/>
+  <!-- Decorative sparkle -->
+  <circle cx="18" cy="6" r="1.2" fill="#fff" opacity="0.6"/>
+  <circle cx="19.5" cy="7.5" r="0.6" fill="#fff" opacity="0.4"/>
 </svg>

@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <line x1="18" y1="6" x2="6" y2="18"/>
-  <line x1="6" y1="6" x2="18" y2="18"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="xGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle background -->
+  <circle cx="12" cy="12" r="10" fill="url(#xGrad)" opacity="0.2" stroke="url(#xGrad)" stroke-width="2"/>
+  <!-- X mark -->
+  <path d="M8 8l8 8M16 8l-8 8" fill="none" stroke="url(#xGrad)" stroke-width="3" stroke-linecap="round"/>
 </svg>

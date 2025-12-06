@@ -1,6 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M3 3v18h18"/>
-  <path d="M18 17V9"/>
-  <path d="M13 17V5"/>
-  <path d="M8 17v-3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="dashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <!-- Bars with fills -->
+  <rect x="6" y="13" width="3" height="6" rx="1" fill="url(#dashGrad)" opacity="0.7"/>
+  <rect x="10.5" y="8" width="3" height="11" rx="1" fill="url(#dashGrad)" opacity="0.85"/>
+  <rect x="15" y="4" width="3" height="15" rx="1" fill="url(#dashGrad)"/>
+  <!-- Axis -->
+  <path d="M3 3v17h18" fill="none" stroke="url(#dashGrad)" stroke-width="2" stroke-linecap="round"/>
 </svg>

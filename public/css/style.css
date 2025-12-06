@@ -327,7 +327,20 @@ body::before {
 .login-icon .icon {
   width: 4rem;
   height: 4rem;
-  color: var(--primary);
+  filter: drop-shadow(0 8px 24px rgba(102, 126, 234, 0.6));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .login-title {
@@ -510,13 +523,19 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .stat-icon .icon {
-  width: 2rem;
-  height: 2rem;
-  color: var(--primary);
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: drop-shadow(0 4px 12px rgba(102, 126, 234, 0.4));
+  transition: all var(--transition-base);
+}
+
+.stat-card:hover .stat-icon .icon {
+  transform: scale(1.15) rotate(5deg);
+  filter: drop-shadow(0 6px 20px rgba(102, 126, 234, 0.8));
 }
 
 .stat-label {

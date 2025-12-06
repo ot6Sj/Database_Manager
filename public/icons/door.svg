@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
-  <path d="M20 9v6"/>
-  <circle cx="11" cy="12" r="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="exitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+  </defs>
+  <!-- Door frame -->
+  <rect x="3" y="2" width="11" height="20" rx="1" fill="url(#exitGrad)" opacity="0.2" stroke="url(#exitGrad)" stroke-width="2"/>
+  <!-- Exit arrow -->
+  <path d="M15 12h7m-3-3l3 3-3 3" fill="none" stroke="url(#exitGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Door handle -->
+  <circle cx="11" cy="12" r="1.5" fill="url(#exitGrad)"/>
 </svg>
