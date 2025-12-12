@@ -40,6 +40,6 @@ app.use((err, req, res, next) => {
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-    console.log(`📊 Database Management Interface ready!`);
+    console.log(` Server running on http://localhost:${PORT}`);
+    console.log(` Database Management Interface ready!`);
 });
